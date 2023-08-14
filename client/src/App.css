@@ -1,0 +1,125 @@
+.app {
+  height: 100%;
+}
+
+.app {
+  background-color: #282c34;
+}
+
+.app-layout {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.app-layout__half {
+  flex: 1;
+}
+
+.app__files-list {
+  box-sizing: border-box;
+  height: 50%;
+  overflow: hidden auto;
+  padding-top: 40px;
+  position: relative;
+  background-color: #404040;
+  color: grey;
+}
+
+.app__console {
+  box-sizing: border-box;
+  height: 50%;
+  overflow: hidden auto;
+  background-color: #505050;
+}
+
+.app__operation {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 40px;
+  background-color: #505050;
+}
+
+.app__button {
+  height: 32px;
+  line-height: 32px;
+  cursor: pointer;
+  padding: 0 15px;
+  margin: 4px 0 0 12px;
+}
+
+.local-console,
+.files-list {
+  color: white;
+  max-width: 1024px;
+}
+
+.local-console ul,
+.files-list ul {
+  list-style: none;
+  margin: 0;
+  padding: 10px 5px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.files-list ul li {
+  cursor: pointer;
+  width: 50%;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.files-list__saved {
+  display: block;
+  margin: 0 5px;
+  background-color: grey;
+  line-height: 1.4;
+  padding: 0 5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.files-list__close {
+  position: absolute;
+  right: 10px;
+  top: 1px;
+  visibility: hidden;
+  color: white;
+  line-height: 1;
+}
+
+.files-list__close:hover {
+  color: red;
+}
+
+.files-list ul li:hover .files-list__close {
+  visibility: visible;
+}
+
+.local-console {
+  position: relative;
+}
+
+.local-console > h3 {
+  position: absolute;
+  right: 0;
+  top: 0;
+  line-height: 1;
+  margin: 0;
+  padding: 8px 16px;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.local-console ul li {
+  border-bottom: 1px dashed grey;
+  padding: 5px 0;
+  width: 100%;
+}
+
+.local-console__error {
+  color: red;
+}
